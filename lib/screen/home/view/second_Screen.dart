@@ -15,6 +15,13 @@ class _SecondSCreenState extends State<SecondSCreen> {
         appBar: AppBar(
           title: Text("Custom Clipping(Masking)"),
           centerTitle: true,
+          actions: [
+            InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context, 'third');
+                },
+                child: Icon(Icons.arrow_forward))
+          ],
         ),
         body: Center(
           child: Container(

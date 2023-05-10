@@ -8,7 +8,7 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'third',
+      // initialRoute: 'third',
       routes: {
         '/': (context) => homeScreen(),
         'second': (context) => SecondSCreen(),

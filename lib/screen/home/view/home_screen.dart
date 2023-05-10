@@ -15,6 +15,13 @@ class _homeScreenState extends State<homeScreen> {
         appBar: AppBar(
           title: Text("Custom Clipping(Masking)"),
           centerTitle: true,
+          actions: [
+            InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context, 'second');
+                },
+                child: Icon(Icons.arrow_forward))
+          ],
         ),
         body: Center(
           child: Container(
@@ -22,7 +29,8 @@ class _homeScreenState extends State<homeScreen> {
             width: double.infinity,
             child: ClipOval(
               // clipper: TriangleShape(),
-              child: Image.asset("assets/images/HardBackground.jpg",fit: BoxFit.cover),
+              child: Image.asset("assets/images/HardBackground.jpg",
+                  fit: BoxFit.cover),
             ),
           ),
         ),

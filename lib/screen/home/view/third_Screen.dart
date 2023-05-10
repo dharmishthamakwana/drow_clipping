@@ -34,7 +34,9 @@ class _ThirdScreenState extends State<ThirdScreen> {
             child: Container(
               height: 100,
               color: Colors.pink,
-              child: Center(child: Text("MultipleRoundedCurveClipper()")),
+              child: Center(
+                child: Text("MultipleRoundedCurveClipper()"),
+              ),
             ),
           ),
           SizedBox(
@@ -59,7 +61,8 @@ class _ThirdScreenState extends State<ThirdScreen> {
               child: Center(
                 child: Image.asset(
                   "assets/images/HardBackground.jpg",
-                width: double.infinity,),
+                  width: double.infinity,
+                ),
               ),
             ),
           ),
